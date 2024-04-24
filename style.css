@@ -1,0 +1,66 @@
+.container {
+    display: grid;
+    height: 65vmin;
+    width: 65vmin;
+    background-color: azure;
+    padding: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 4px solid lightblue;
+}
+
+.container > div:nth-of-type(2n)
+{
+    background-color: aquamarine;
+}
+
+.container > div:nth-of-type(2n+1)
+{
+    background-color: bisque;
+}
+
+.grid-square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-square-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100px;
+    pointer-events: none;
+}
+
+.info-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+}
+
+.outer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.restart-button {
+    margin: 30px;
+    height: 50px;
+    width: 120px;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: rgb(201, 255, 237);
+    border: 3px solid aquamarine;
+    border-radius: 10px;
+}
+
+.restart-button:hover {
+    background-color: rgb(218, 254, 244);
+}
+
+.info-text input {
+    display: block;
+}
